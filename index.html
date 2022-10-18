@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>apperture</title>
+    <title>Apperture</title>
 </head>
-
 <body>
     <div class="wrapper">
-
         <header class="header">
             <div class="wrapper-inner header-inner">
                 <div class="logo">
@@ -352,43 +349,5 @@
             </div>
         </div>
     </footer>
-
-
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper(".swiper", {
-            slidesPerView: 1,
-            loop: true,
-            autoplay: true,
-            breakpoints: {
-          640: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 3,
-          },
-          1024: {
-            slidesPerView: 4,
-          },
-          
-          1200: {
-            slidesPerView: 5,
-          },
-        },
-        });
-
-        // mobile menu
-
-        let burger = document.querySelector(".burger");
-        let navigation = document.querySelector(".navigation");
-        let body = document.querySelector("body");
-        burger.addEventListener("click", function () {
-            navigation.classList.toggle("active");
-            body.classList.toggle("lock");
-        })
-
-    </script>
-
 </body>
-
 </html>
